@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2623" started-at="2022-05-31T01:31:50 IST" finished-at="2022-05-31T01:31:52 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@7a187f14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="2623" started-at="2022-05-31T01:31:50 IST" finished-at="2022-05-31T01:31:52 IST">
+      <class name="cucumberOptions.TestNGTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@7a187f14]" name="setUpClass" is-config="true" duration-ms="1310" started-at="2022-05-31T01:31:50 IST" finished-at="2022-05-31T01:31:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b956878]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@7a187f14]" name="runScenario" duration-ms="610" started-at="2022-05-31T01:31:51 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T01:31:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search experience for product search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Place the order of Products]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.LandingPage.searchItem(LandingPage.java:20)
+at stepDefinations.LandingPageStepDefination.user_searched_with_shortname_and_extracted_actual_name_of_product(LandingPageStepDefination.java:26)
+at ✽.user searched with Shortname Tom and extracted actual name of product(file:///F:/Java/Selenium/cucumberscratch/src/test/java/features/checkout.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@7a187f14]" name="tearDownClass" is-config="true" duration-ms="635" started-at="2022-05-31T01:31:52 IST" finished-at="2022-05-31T01:31:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestNGTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
