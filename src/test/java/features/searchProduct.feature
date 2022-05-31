@@ -12,3 +12,4 @@ Examples:
 | Name  |
 | Tom   |
 | Beet  |
+|cucm   |
